@@ -51,7 +51,6 @@ while running:
             running = False   
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             running = False
-
         elif event.type == pygame.MOUSEBUTTONUP:
             pos = pygame.mouse.get_pos()
             item = simpledialog.askstring('Space', 'Nome da Estrela:')
