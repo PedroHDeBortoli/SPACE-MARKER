@@ -1,2 +1,0 @@
-fa,346,234
-desconhecido,558,279
