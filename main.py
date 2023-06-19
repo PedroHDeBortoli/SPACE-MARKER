@@ -1,6 +1,7 @@
 import pygame
 from tkinter import simpledialog
 from estrelas import adicionar_estrelas, desenhar_estrelas, desenhar_linhas
+
 pygame.init()
 tamanho = (800, 600)
 branco = (255, 255, 255)
@@ -12,7 +13,6 @@ fundo = pygame.image.load("bg.jpg")
 pygame.display.set_caption("SPACE MARKER")
 pygame.mixer.music.load("Space_Machine_Power.mp3")
 pygame.mixer.music.play(-1)
-
 estrelas = {}
 fonte = pygame.font.Font(None, 22)
 deslocamentox = 15

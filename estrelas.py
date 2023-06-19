@@ -31,7 +31,7 @@ def desenhar_linhas(tela, estrelas, fonte):
 
             if total > 20:
                 pygame.draw.line(tela, cor, atual, anterior)
-
+                
             soma = abs(distanciaX) + abs(distanciaY)
             distancias = fonte.render(str(int(soma)), True, cor)
             centroX = (atual[0] + anterior[0]) // 2 + 10
