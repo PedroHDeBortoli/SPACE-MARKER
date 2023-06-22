@@ -60,7 +60,7 @@ while running:
 
     tela.fill(branco)
     tela.blit(fundo, (0, 0))
-    
+
     desenhar_estrelas(tela, estrelas, fonte, deslocamentox)
     desenhar_linhas(tela, estrelas, fonte)
 
