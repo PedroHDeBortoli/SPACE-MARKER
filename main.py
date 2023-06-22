@@ -1,7 +1,6 @@
 import pygame
 from tkinter import simpledialog
 from estrelas import adicionar_estrelas, desenhar_estrelas, desenhar_linhas
-
 pygame.init()
 tamanho = (800, 600)
 branco = (255, 255, 255)
@@ -61,14 +60,13 @@ while running:
 
     tela.fill(branco)
     tela.blit(fundo, (0, 0))
-
+    
     desenhar_estrelas(tela, estrelas, fonte, deslocamentox)
     desenhar_linhas(tela, estrelas, fonte)
 
     for i in range(len(comandos)):
         comando = comandos[i]
         tela.blit(fonte.render(comando, True, branco), (10, 10 + i * 30))
-
         keys = pygame.key.get_pressed()
         if keys[pygame.K_F10]:
             salvar_pontos()

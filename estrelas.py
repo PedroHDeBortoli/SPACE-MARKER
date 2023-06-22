@@ -28,7 +28,6 @@ def desenhar_linhas(tela, estrelas, fonte):
             distanciaX = atual[0] - anterior[0]
             distanciaY = atual[1] - anterior[1]
             total = ((distanciaX ** 2) + (distanciaY ** 2)) ** 0.5
-
             if total > 20:
                 pygame.draw.line(tela, cor, atual, anterior)
                 
