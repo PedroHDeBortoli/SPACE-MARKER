@@ -22,7 +22,7 @@ def salvar_pontos():
         for nome, posicao in estrelas.items():
             file.write(nome + ',' + str(posicao[0]) + ',' + str(posicao[1]) + '\n')
     print('Pontos salvos')
-
+    
 def carregar_pontos():
     estrelas.clear()
     try:
